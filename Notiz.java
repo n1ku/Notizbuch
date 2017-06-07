@@ -2,32 +2,49 @@
 /**
  * Write a description of class Notiz here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (n1k)
+ * @version (07072017)
  */
 public class Notiz
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private int prioritaet;
+    private Datum datum;
+    private String text;
 
-    /**
-     * Constructor for objects of class Notiz
-     */
-    public Notiz()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
+    /***
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param prioritaet
+     * @param tag
+     * @param monat
+     * @param jahr
+     * @param text
      */
-    public int sampleMethod(int y)
+    public Notiz(int prioritaet, int tag, int monat, int jahr, String
+            text)
     {
-        // put your code here
-        return x + y;
+        this.prioritaet=prioritaet;
+        this.datum=datum;
+        this.text=text;
+        datum = new Datum(tag, monat, jahr);
+    }
+    public int getPrioritaet()
+    {
+        return this.prioritaet;
+    }
+    public Datum getDatum()
+    {
+        return this.datum;
+    }
+    public String getText()
+    {
+        return this.text;
+    }
+    public String gibNotizAlsText()
+    {
+        String notiz=null;
+        notiz += "Prioritaet: " + this.prioritaet;
+        notiz += ", Datum: " + this.datum.gibDatumAlsText();
+        notiz += ", Text: " + this.text;
+        return notiz;
     }
 }

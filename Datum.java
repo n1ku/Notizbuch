@@ -1,33 +1,43 @@
 
 /**
- * Write a description of class Datum here.
+ * Write a description of class Notiz here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (n1k)
+ * @version (07072017)
  */
+
 public class Datum
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private int tag;
+    private int monat;
+    private int jahr;
 
-    /**
-     * Constructor for objects of class Datum
-     */
-    public Datum()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
+    /***
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param tag
+     * @param monat
+     * @param jahr
      */
-    public int sampleMethod(int y)
+    public Datum(int tag, int monat, int jahr)
     {
-        // put your code here
-        return x + y;
+        this.tag = tag;
+        this.monat = monat;
+        this.jahr = jahr;
+    }
+    public int getTag()
+    {
+        return this.tag;
+    }
+    public int getMonat()
+    {
+        return this.monat;
+    }
+    public int getJahr()
+    {
+        return this.jahr;
+    }
+    public String gibDatumAlsText()
+    {
+        return ""+this.tag+"."+this.monat+"."+this.jahr;
     }
 }

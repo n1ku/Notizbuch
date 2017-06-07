@@ -2,32 +2,15 @@
 /**
  * Write a description of class Notizbuch here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (n1k)
+ * @version (07072017)
  */
 public class Notizbuch
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private Notiz notes;
 
-    /**
-     * Constructor for objects of class Notizbuch
-     */
-    public Notizbuch()
+    public boolean erstelleNotiz( int prioritaet, int tag, int monat, int jahr, String text)
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        this.notes = new Notiz(prioritaet,tag,monat,jahr,text);
     }
 }
