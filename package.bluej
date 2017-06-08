@@ -1,8 +1,11 @@
 #BlueJ package file
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
+dependency1.from=Notizbuch
+dependency1.to=Notiz
+dependency1.type=UsesDependency
+editor.fx.0.height=756
+editor.fx.0.width=800
+editor.fx.0.x=593
+editor.fx.0.y=143
 objectbench.height=93
 objectbench.width=461
 package.divider.horizontal=0.6
@@ -13,7 +16,7 @@ package.editor.x=2380
 package.editor.y=183
 package.frame.height=600
 package.frame.width=800
-package.numDependencies=0
+package.numDependencies=1
 package.numTargets=3
 package.showExtends=true
 package.showUses=true

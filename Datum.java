@@ -3,7 +3,7 @@
  * Write a description of class Notiz here.
  *
  * @author (n1k)
- * @version (07072017)
+ * @version (07062017)
  */
 
 public class Datum

@@ -3,7 +3,7 @@
  * Write a description of class Notiz here.
  *
  * @author (n1k)
- * @version (07072017)
+ * @version (07062017)
  */
 public class Notiz
 {
@@ -19,8 +19,7 @@ public class Notiz
      * @param jahr
      * @param text
      */
-    public Notiz(int prioritaet, int tag, int monat, int jahr, String
-            text)
+    public Notiz(int prioritaet, int tag, int monat, int jahr, String text)
     {
         this.prioritaet=prioritaet;
         this.datum=datum;
