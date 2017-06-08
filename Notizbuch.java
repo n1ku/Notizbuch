@@ -26,17 +26,17 @@ public class Notizbuch
     {
         if(count < 3)
         {
-            Notiz n = new Notiz(prioritaet,tag,monat,jahr,text);
+            Notiz note = new Notiz(prioritaet,tag,monat,jahr,text);
             switch (count)
             {
-                case 0: this.note0 = n;
+                case 0: this.note0 = note;
                         this.count++;
                         return true;
 
-                case 1: this.note1 = n;
+                case 1: this.note1 = note;
                         this.count++;
                         return true;
-                case 2: this.note2 = n;
+                case 2: this.note2 = note;
                         this.count++;
                         return true;
                 default: return false;
