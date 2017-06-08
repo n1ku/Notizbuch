@@ -42,6 +42,7 @@ public class Notizbuch
                 default: return false;
             }
         }
+        return false;
 
     }
     public Notiz show( int prioritaet, int tag, int monat, int jahr, String text)
