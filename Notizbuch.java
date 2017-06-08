@@ -45,9 +45,4 @@ public class Notizbuch
         return false;
 
     }
-    public Notiz show( int prioritaet, int tag, int monat, int jahr, String text)
-    {
-        Notiz n = new Notiz(prioritaet,tag,monat,jahr,text);
-        return n;
-    }
 }
