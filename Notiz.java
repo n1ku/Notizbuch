@@ -40,7 +40,7 @@ public class Notiz
     }
     public String gibNotizAlsText()
     {
-        String notiz=null;
+        String notiz="";
         notiz += "Prioritaet: " + this.prioritaet;
         notiz += ", Datum: " + this.datum.gibDatumAlsText();
         notiz += ", Text: " + this.text;
