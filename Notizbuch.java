@@ -108,9 +108,17 @@ public class Notizbuch
     {
         if(this.note0 != null)
         {
-            System.out.println(note0.getText());
-            System.out.println(note1.getText());
-            System.out.println(note2.getText());
+            switch (count)
+            {
+                case 1: System.out.println(note0.getText());
+
+                case 2: System.out.println(note0.getText());
+                        System.out.println(note1.getText());
+
+                case 3: System.out.println(note0.getText());
+                        System.out.println(note1.getText());
+                        System.out.println(note2.getText());
+            }
         }
         else { System.out.println("Sorry, keine Notizen vorhanden"); }
     }
